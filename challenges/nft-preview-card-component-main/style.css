@@ -1,0 +1,111 @@
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1.2fr 1fr;
+  gap: 20px;
+  border-radius: 10px;
+  max-width: 250px;
+  box-shadow: 0px 3px 24px 1px rgba(0, 0, 0, 0.49);
+}
+
+.card-img {
+  background: url(images/image-equilibrium.jpg) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-title {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.card-paragraph {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.card-eth-days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.card-eth::before {
+  content: "";
+  background: url(images/icon-ethereum.svg) no-repeat;
+  background-size: 10px 17px;
+  background-position: center;
+  padding: 10px;
+}
+
+.card-days-left {
+  color: hsl(215, 51%, 70%);
+  opacity: 0.9;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.card-days-left::before {
+  content: "";
+  background: url(images/icon-clock.svg) no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  padding: 10px;
+}
+
+.card-user {
+  display: flex;
+  gap: 5px;
+  font-weight: 300;
+  font-size: 0.9em;
+  opacity: 0.9;
+  border-top: 1px solid rgb(139, 172, 218, 0.1);
+  padding-top: 20px;
+  align-items: center;
+}
+
+.user-profile-img {
+  background: url(images/image-avatar.png) no-repeat;
+  background-size: 95% 95%;
+  background-position: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.user-creation {
+  color: hsl(215, 51%, 70%);
+}
+
+.user-name {
+  color: hsl(0, 0%, 100%);
+}
