@@ -19,10 +19,31 @@ body {
 }
 
 .card-img {
+  position: relative;
+}
+
+.background-img {
   background: url(images/image-equilibrium.jpg) no-repeat;
   background-position: center;
   background-size: 100% 100%;
   border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-img-hover {
+  background-color: hsl(178, 100%, 50%, 0.5);
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.card-img-hover:hover {
+  opacity: 1;
 }
 
 .card-content {
@@ -35,6 +56,11 @@ body {
   color: hsl(0, 0%, 100%);
   font-weight: bold;
   opacity: 0.9;
+}
+
+.card-title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 
 .card-paragraph {
@@ -108,4 +134,9 @@ body {
 
 .user-name {
   color: hsl(0, 0%, 100%);
+}
+
+.user-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
